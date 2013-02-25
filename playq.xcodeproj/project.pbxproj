@@ -41,16 +41,16 @@
 			children = (
 				7B0701CE16DB83CC0002026B /* lib */,
 				7B0701BC16DB7C010002026B /* src */,
-				7B0701A316DB79CF0002026B /* Products */,
+				7B0701A316DB79CF0002026B /* bin */,
 			);
 			sourceTree = "<group>";
 		};
-		7B0701A316DB79CF0002026B /* Products */ = {
+		7B0701A316DB79CF0002026B /* bin */ = {
 			isa = PBXGroup;
 			children = (
 				7B0701A216DB79CF0002026B /* playq */,
 			);
-			name = Products;
+			name = bin;
 			sourceTree = "<group>";
 		};
 		7B0701BC16DB7C010002026B /* src */ = {
@@ -137,7 +137,7 @@
 				en,
 			);
 			mainGroup = 7B07019916DB79CF0002026B;
-			productRefGroup = 7B0701A316DB79CF0002026B /* Products */;
+			productRefGroup = 7B0701A316DB79CF0002026B /* bin */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

@@ -1,4 +1,4 @@
-Super-minimal CLI audio player based on FMOD.
+## Super-minimal CLI audio player based on FMOD
 
 It's designed for quite a specific use case (namely installation work), so the focus will be on stability and simplicity rather than features.
 Currently all audio is read into memory, rather than streamed from disk. This is by design but may be revised later.
