@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B0701CD16DB82440002026B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B0701CC16DB82440002026B /* main.cpp */; };
-		7B0701DA16DB83CC0002026B /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0701D916DB83CC0002026B /* libfmodex.dylib */; };
+		7BD28D4F16DBC4F9000D3542 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B0701CC16DB82440002026B /* main.cpp */; };
+		7BD28D5116DBC4F9000D3542 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0701D916DB83CC0002026B /* libfmodex.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B0701A216DB79CF0002026B /* playq */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = playq; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0701CC16DB82440002026B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		7B0701D116DB83CC0002026B /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
 		7B0701D216DB83CC0002026B /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
@@ -22,14 +21,15 @@
 		7B0701D616DB83CC0002026B /* fmod_memoryinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_memoryinfo.h; sourceTree = "<group>"; };
 		7B0701D716DB83CC0002026B /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
 		7B0701D916DB83CC0002026B /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmodex.dylib; sourceTree = "<group>"; };
+		7BD28D5616DBC4F9000D3542 /* resound */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = resound; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B07019F16DB79CF0002026B /* Frameworks */ = {
+		7BD28D5016DBC4F9000D3542 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B0701DA16DB83CC0002026B /* libfmodex.dylib in Frameworks */,
+				7BD28D5116DBC4F9000D3542 /* libfmodex.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +48,7 @@
 		7B0701A316DB79CF0002026B /* bin */ = {
 			isa = PBXGroup;
 			children = (
-				7B0701A216DB79CF0002026B /* playq */,
+				7BD28D5616DBC4F9000D3542 /* resound */,
 			);
 			name = bin;
 			sourceTree = "<group>";
@@ -103,21 +103,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B0701A116DB79CF0002026B /* playq */ = {
+		7BD28D4D16DBC4F9000D3542 /* resound */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B0701AB16DB79CF0002026B /* Build configuration list for PBXNativeTarget "playq" */;
+			buildConfigurationList = 7BD28D5316DBC4F9000D3542 /* Build configuration list for PBXNativeTarget "resound" */;
 			buildPhases = (
-				7B07019E16DB79CF0002026B /* Sources */,
-				7B07019F16DB79CF0002026B /* Frameworks */,
-				7B0701C916DB81260002026B /* ShellScript */,
+				7BD28D4E16DBC4F9000D3542 /* Sources */,
+				7BD28D5016DBC4F9000D3542 /* Frameworks */,
+				7BD28D5216DBC4F9000D3542 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = playq;
+			name = resound;
 			productName = playq;
-			productReference = 7B0701A216DB79CF0002026B /* playq */;
+			productReference = 7BD28D5616DBC4F9000D3542 /* resound */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +129,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = _Jake;
 			};
-			buildConfigurationList = 7B07019D16DB79CF0002026B /* Build configuration list for PBXProject "playq" */;
+			buildConfigurationList = 7B07019D16DB79CF0002026B /* Build configuration list for PBXProject "resound" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -141,13 +141,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B0701A116DB79CF0002026B /* playq */,
+				7BD28D4D16DBC4F9000D3542 /* resound */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B0701C916DB81260002026B /* ShellScript */ = {
+		7BD28D5216DBC4F9000D3542 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -158,16 +158,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp ./lib/fmod/lib/libfmodex.dylib './build'\ncp -f \"$TARGET_BUILD_DIR/$PRODUCT_NAME\" './build/'";
+			shellScript = "cp ./lib/fmod/lib/libfmodex.dylib './bin/'\ncp ./lib/fmod/lib/libfmodex.dylib \"$TARGET_BUILD_DIR\"\ncp -f \"$TARGET_BUILD_DIR/$PRODUCT_NAME\" './bin/'";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B07019E16DB79CF0002026B /* Sources */ = {
+		7BD28D4E16DBC4F9000D3542 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B0701CD16DB82440002026B /* main.cpp in Sources */,
+				7BD28D4F16DBC4F9000D3542 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +231,7 @@
 			};
 			name = Release;
 		};
-		7B0701AC16DB79CF0002026B /* Debug */ = {
+		7BD28D5416DBC4F9000D3542 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -242,11 +242,11 @@
 					"\"$(SRCROOT)/lib\"",
 					"\"$(SRCROOT)/lib/fmod/lib\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = resound;
 			};
 			name = Debug;
 		};
-		7B0701AD16DB79CF0002026B /* Release */ = {
+		7BD28D5516DBC4F9000D3542 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -257,14 +257,14 @@
 					"\"$(SRCROOT)/lib\"",
 					"\"$(SRCROOT)/lib/fmod/lib\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = resound;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B07019D16DB79CF0002026B /* Build configuration list for PBXProject "playq" */ = {
+		7B07019D16DB79CF0002026B /* Build configuration list for PBXProject "resound" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B0701A916DB79CF0002026B /* Debug */,
@@ -273,11 +273,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B0701AB16DB79CF0002026B /* Build configuration list for PBXNativeTarget "playq" */ = {
+		7BD28D5316DBC4F9000D3542 /* Build configuration list for PBXNativeTarget "resound" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B0701AC16DB79CF0002026B /* Debug */,
-				7B0701AD16DB79CF0002026B /* Release */,
+				7BD28D5416DBC4F9000D3542 /* Debug */,
+				7BD28D5516DBC4F9000D3542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
