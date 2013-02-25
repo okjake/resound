@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B0701CD16DB82440002026B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B0701CC16DB82440002026B /* main.cpp */; };
+		7B0701DA16DB83CC0002026B /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0701D916DB83CC0002026B /* libfmodex.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B0701A216DB79CF0002026B /* playq */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = playq; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0701BE16DB7C010002026B /* playq.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = playq.1; sourceTree = "<group>"; };
+		7B0701CC16DB82440002026B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7B0701D116DB83CC0002026B /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
+		7B0701D216DB83CC0002026B /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
+		7B0701D316DB83CC0002026B /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
+		7B0701D416DB83CC0002026B /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
+		7B0701D516DB83CC0002026B /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
+		7B0701D616DB83CC0002026B /* fmod_memoryinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_memoryinfo.h; sourceTree = "<group>"; };
+		7B0701D716DB83CC0002026B /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
+		7B0701D916DB83CC0002026B /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmodex.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B07019F16DB79CF0002026B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0701DA16DB83CC0002026B /* libfmodex.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B07019916DB79CF0002026B = {
+			isa = PBXGroup;
+			children = (
+				7B0701CE16DB83CC0002026B /* lib */,
+				7B0701BC16DB7C010002026B /* src */,
+				7B0701A316DB79CF0002026B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B0701A316DB79CF0002026B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B0701A216DB79CF0002026B /* playq */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B0701BC16DB7C010002026B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7B0701CC16DB82440002026B /* main.cpp */,
+				7B0701BE16DB7C010002026B /* playq.1 */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		7B0701CE16DB83CC0002026B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7B0701CF16DB83CC0002026B /* fmod */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		7B0701CF16DB83CC0002026B /* fmod */ = {
+			isa = PBXGroup;
+			children = (
+				7B0701D016DB83CC0002026B /* inc */,
+				7B0701D816DB83CC0002026B /* lib */,
+			);
+			path = fmod;
+			sourceTree = "<group>";
+		};
+		7B0701D016DB83CC0002026B /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				7B0701D116DB83CC0002026B /* fmod.h */,
+				7B0701D216DB83CC0002026B /* fmod.hpp */,
+				7B0701D316DB83CC0002026B /* fmod_codec.h */,
+				7B0701D416DB83CC0002026B /* fmod_dsp.h */,
+				7B0701D516DB83CC0002026B /* fmod_errors.h */,
+				7B0701D616DB83CC0002026B /* fmod_memoryinfo.h */,
+				7B0701D716DB83CC0002026B /* fmod_output.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		7B0701D816DB83CC0002026B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7B0701D916DB83CC0002026B /* libfmodex.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B0701A116DB79CF0002026B /* playq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B0701AB16DB79CF0002026B /* Build configuration list for PBXNativeTarget "playq" */;
+			buildPhases = (
+				7B07019E16DB79CF0002026B /* Sources */,
+				7B07019F16DB79CF0002026B /* Frameworks */,
+				7B0701C916DB81260002026B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playq;
+			productName = playq;
+			productReference = 7B0701A216DB79CF0002026B /* playq */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B07019A16DB79CF0002026B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = _Jake;
+			};
+			buildConfigurationList = 7B07019D16DB79CF0002026B /* Build configuration list for PBXProject "playq" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B07019916DB79CF0002026B;
+			productRefGroup = 7B0701A316DB79CF0002026B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B0701A116DB79CF0002026B /* playq */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B0701C916DB81260002026B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp ./lib/fmod/lib/libfmodex.dylib './build'\ncp -f \"$TARGET_BUILD_DIR/$PRODUCT_NAME\" './build/'";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B07019E16DB79CF0002026B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0701CD16DB82440002026B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7B0701A916DB79CF0002026B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7B0701AA16DB79CF0002026B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7B0701AC16DB79CF0002026B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/portaudio/19.20111121/lib,
+					"\"$(SRCROOT)/../../Desktop/FMOD Programmers API/api/lib\"",
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/lib/fmod/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7B0701AD16DB79CF0002026B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/portaudio/19.20111121/lib,
+					"\"$(SRCROOT)/../../Desktop/FMOD Programmers API/api/lib\"",
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/lib/fmod/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B07019D16DB79CF0002026B /* Build configuration list for PBXProject "playq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0701A916DB79CF0002026B /* Debug */,
+				7B0701AA16DB79CF0002026B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B0701AB16DB79CF0002026B /* Build configuration list for PBXNativeTarget "playq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0701AC16DB79CF0002026B /* Debug */,
+				7B0701AD16DB79CF0002026B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B07019A16DB79CF0002026B /* Project object */;
+}
