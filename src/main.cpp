@@ -14,7 +14,7 @@
 
 #define MAX_AUDIO_FILES 32
 #define VERSION 0.01
-#define USAGE "Usage: resound \"/path/to/audiofile\" \"/path/to/audiofile_two\" --config \"/path/to/config_file\""
+#define USAGE "Usage: resound audiofile.mp3 audiofile.wav ... --config configfile.yml"
 
 void checkErr(FMOD_RESULT res)
 {
