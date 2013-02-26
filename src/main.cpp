@@ -1,6 +1,5 @@
 //
 //  main.cpp
-//  playq
 //
 //  Created by _Jake on 25/02/2013.
 //  Copyright (c) 2013 _Jake. All rights reserved.
@@ -12,7 +11,6 @@
 #include "fmod.hpp"
 #include "fmod_errors.h"
 
-#define MAX_AUDIO_FILES 32
 #define VERSION 0.01
 #define USAGE "Usage: resound audiofile.mp3 audiofile.wav ... --config configfile.yml"
 
@@ -52,7 +50,7 @@ int main(int argc, const char * argv[])
                 cfg_set = true;
             }
             else {
-                path_audio.push_back(argv[i]);
+                path_audio.push_back(std::string(argv[i]));
             }
         }
         else {
@@ -62,7 +60,7 @@ int main(int argc, const char * argv[])
     }
     
     FMOD::System     *system;
-    FMOD::Sound      *sound;
+    FMOD::Sound      *sound[path_config.size()];
     FMOD::Channel    *channel = 0;
     FMOD_RESULT       result;
     
@@ -71,16 +69,23 @@ int main(int argc, const char * argv[])
     
     result = system->init(32, FMOD_INIT_NORMAL, NULL);
     checkErr(result);
-    result = system->createSound(argv[1], FMOD_SOFTWARE, 0, &sound);
-    checkErr(result);
     
-    result = sound->setMode(FMOD_LOOP_OFF);
-    checkErr(result);
+    
+    for (int i=0; i<path_audio.size(); i++) {
+        std::cout << "loading: " << path_audio[i] << std::endl;
+        result = system->createSound(path_audio[i].c_str(), FMOD_SOFTWARE, 0, &sound[i]);
+        checkErr(result);
+        result = sound[i]->setMode(FMOD_LOOP_OFF);
+        checkErr(result);
+    }
     
     do
     {
-        result = system->playSound(FMOD_CHANNEL_FREE, sound, 0, &channel);
-        checkErr(result);
+        for (int i=0; i<path_audio.size(); i++) {
+            result = system->playSound(FMOD_CHANNEL_FREE, sound[i], 0, &channel);
+            checkErr(result);
+        }
+
         system->update();
     }
     

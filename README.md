@@ -9,7 +9,7 @@ Builds on OSX currently. I'll be working on Linux support shortly. Built on FMOD
 Pass one or more soundfile paths as command line arguments. They will be played.
 If you need more fine-grained configuration, use a configuration YAML file. There's one in the examples folder.
 
-### This is currently working:
+### Currently working:
 + Looping a single audio file (by passing the filepath as the first argument)
 
 ### What's coming / roadmap:
