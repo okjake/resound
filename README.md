@@ -11,9 +11,9 @@ If you need more fine-grained configuration, use a configuration YAML file. Ther
 
 ### Currently working:
 + Looping a single audio file (by passing the filepath as the first argument)
++ Play and loop multiple audio files
 
 ### What's coming / roadmap:
-+ Play and loop multiple audio files
 + Passing external config file at runtime
 + OSC support
 
