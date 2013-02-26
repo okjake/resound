@@ -72,10 +72,9 @@ int main(int argc, const char * argv[])
     
     
     for (int i=0; i<path_audio.size(); i++) {
-        std::cout << "loading: " << path_audio[i] << std::endl;
         result = system->createSound(path_audio[i].c_str(), FMOD_SOFTWARE, 0, &sound[i]);
         checkErr(result);
-        result = sound[i]->setMode(FMOD_LOOP_OFF);
+        result = sound[i]->setMode(FMOD_LOOP_NORMAL);
         checkErr(result);
     }
     
