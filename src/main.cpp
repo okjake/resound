@@ -1,8 +1,10 @@
 //
 //  main.cpp
+//  (c in c++'s clothing)
 //
 //  Created by _Jake on 25/02/2013.
 //  Copyright (c) 2013 _Jake. All rights reserved.
+//
 //
 
 #include <iostream>
@@ -25,6 +27,9 @@ void checkErr(FMOD_RESULT res)
 
 int main(int argc, const char * argv[])
 {
+    /*
+     * Parse CLI args
+     */
     std::string path_config;
     std::vector<std::string> path_audio;
     
@@ -44,14 +49,9 @@ int main(int argc, const char * argv[])
     
     bool cfg_set = false;
     for (int i = 1; i < argc; i++) {
-        
         if (!cfg_set) {
-            if (!strncmp(argv[i], "--config", 8) || !strncmp(argv[i], "-c", 2)) {
-                cfg_set = true;
-            }
-            else {
-                path_audio.push_back(std::string(argv[i]));
-            }
+            if (!strncmp(argv[i], "--config", 8) || !strncmp(argv[i], "-c", 2)) cfg_set = true;
+            else path_audio.push_back(std::string(argv[i]));
         }
         else {
             path_config = argv[i];
@@ -59,8 +59,11 @@ int main(int argc, const char * argv[])
         }
     }
     
+    /*
+     * Set up FMOD
+     */
     FMOD::System     *system;
-    FMOD::Sound      *sound[path_config.size()];
+    FMOD::Sound      *sound[path_audio.size()];
     FMOD::Channel    *channel = 0;
     FMOD_RESULT       result;
     
@@ -78,6 +81,9 @@ int main(int argc, const char * argv[])
         checkErr(result);
     }
     
+    /*
+     * Play loop
+     */
     do
     {
         for (int i=0; i<path_audio.size(); i++) {
