@@ -10,6 +10,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "config.h"
 #include "fmod.hpp"
 #include "fmod_errors.h"
 
@@ -58,6 +59,12 @@ int main(int argc, const char * argv[])
             cfg_set = false;
         }
     }
+    
+    /*
+     * Build the configuration object
+     */
+    Config::getInstance();
+    
     
     /*
      * Set up FMOD

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7BD28D4F16DBC4F9000D3542 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B0701CC16DB82440002026B /* main.cpp */; };
 		7BD28D5116DBC4F9000D3542 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0701D916DB83CC0002026B /* libfmodex.dylib */; };
+		7BD28DE016DEB516000D3542 /* config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BD28DDE16DEB516000D3542 /* config.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		7B0701D716DB83CC0002026B /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
 		7B0701D916DB83CC0002026B /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmodex.dylib; sourceTree = "<group>"; };
 		7BD28D5616DBC4F9000D3542 /* resound */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = resound; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD28DDE16DEB516000D3542 /* config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = config.cpp; sourceTree = "<group>"; };
+		7BD28DDF16DEB516000D3542 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				7B0701CC16DB82440002026B /* main.cpp */,
+				7BD28DDE16DEB516000D3542 /* config.cpp */,
+				7BD28DDF16DEB516000D3542 /* config.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BD28D4F16DBC4F9000D3542 /* main.cpp in Sources */,
+				7BD28DE016DEB516000D3542 /* config.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/_jake/Workspaces/exp/resound/lib/yaml-cpp/include";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/portaudio/19.20111121/lib,
@@ -250,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/_jake/Workspaces/exp/resound/lib/yaml-cpp/include";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/portaudio/19.20111121/lib,
