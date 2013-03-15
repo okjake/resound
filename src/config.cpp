@@ -7,6 +7,9 @@
 //
 
 #include "config.h"
+#include "json.h"
+
+using namespace std;
 
 Config* Config::mInstance = NULL;
 
@@ -17,4 +20,10 @@ Config* Config::getInstance() {
     }
     
     return mInstance;
+}
+
+void Config::set(std::string fp) {
+    
+    // Parse this.
+    
 }

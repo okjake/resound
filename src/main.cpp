@@ -63,8 +63,7 @@ int main(int argc, const char * argv[])
     /*
      * Build the configuration object
      */
-    Config::getInstance();
-    
+    if (cfg_set) Config::getInstance()->set(path_config);
     
     /*
      * Set up FMOD

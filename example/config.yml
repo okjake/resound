@@ -1,7 +1,0 @@
-files:
-  name: 'Test track 1'
-    path: './data/test1.wav'
-  name: 'Test track 2'
-    path: './data/test2.mp3'
-  name: 'Test track 3'
-    path: './data/test3.aiff'

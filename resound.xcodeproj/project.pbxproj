@@ -7,12 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23457F6D16F3C0D400750F09 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23457F6C16F3C0D400750F09 /* libfmodex.dylib */; };
+		23457FFA16F3CEC600750F09 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23457FF416F3CEC600750F09 /* json_reader.cpp */; };
+		23457FFB16F3CEC600750F09 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23457FF616F3CEC600750F09 /* json_value.cpp */; };
+		23457FFC16F3CEC600750F09 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23457FF816F3CEC600750F09 /* json_writer.cpp */; };
 		7BD28D4F16DBC4F9000D3542 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B0701CC16DB82440002026B /* main.cpp */; };
-		7BD28D5116DBC4F9000D3542 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0701D916DB83CC0002026B /* libfmodex.dylib */; };
 		7BD28DE016DEB516000D3542 /* config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BD28DDE16DEB516000D3542 /* config.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23457F6C16F3C0D400750F09 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = osx/libfmodex.dylib; sourceTree = "<group>"; };
+		23457FE816F3CEC600750F09 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		23457FE916F3CEC600750F09 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		23457FEA16F3CEC600750F09 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		23457FEB16F3CEC600750F09 /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		23457FEC16F3CEC600750F09 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		23457FED16F3CEC600750F09 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		23457FEE16F3CEC600750F09 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		23457FEF16F3CEC600750F09 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		23457FF116F3CEC600750F09 /* json_batchallocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json_batchallocator.h; sourceTree = "<group>"; };
+		23457FF216F3CEC600750F09 /* json_internalarray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalarray.inl; sourceTree = "<group>"; };
+		23457FF316F3CEC600750F09 /* json_internalmap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalmap.inl; sourceTree = "<group>"; };
+		23457FF416F3CEC600750F09 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
+		23457FF516F3CEC600750F09 /* json_tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json_tool.h; sourceTree = "<group>"; };
+		23457FF616F3CEC600750F09 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
+		23457FF716F3CEC600750F09 /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
+		23457FF816F3CEC600750F09 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
+		23457FF916F3CEC600750F09 /* sconscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sconscript; sourceTree = "<group>"; };
 		7B0701CC16DB82440002026B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		7B0701D116DB83CC0002026B /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
 		7B0701D216DB83CC0002026B /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
@@ -21,7 +42,6 @@
 		7B0701D516DB83CC0002026B /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
 		7B0701D616DB83CC0002026B /* fmod_memoryinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_memoryinfo.h; sourceTree = "<group>"; };
 		7B0701D716DB83CC0002026B /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
-		7B0701D916DB83CC0002026B /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmodex.dylib; sourceTree = "<group>"; };
 		7BD28D5616DBC4F9000D3542 /* resound */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = resound; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD28DDE16DEB516000D3542 /* config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = config.cpp; sourceTree = "<group>"; };
 		7BD28DDF16DEB516000D3542 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -32,13 +52,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD28D5116DBC4F9000D3542 /* libfmodex.dylib in Frameworks */,
+				23457F6D16F3C0D400750F09 /* libfmodex.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23457F6B16F3C0B700750F09 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				23457F6C16F3C0D400750F09 /* libfmodex.dylib */,
+			);
+			name = osx;
+			sourceTree = "<group>";
+		};
+		23457FE516F3CEC600750F09 /* json-cpp */ = {
+			isa = PBXGroup;
+			children = (
+				23457FE616F3CEC600750F09 /* include */,
+				23457FF016F3CEC600750F09 /* src */,
+			);
+			path = "json-cpp";
+			sourceTree = "<group>";
+		};
+		23457FE616F3CEC600750F09 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				23457FE716F3CEC600750F09 /* json */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		23457FE716F3CEC600750F09 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				23457FE816F3CEC600750F09 /* autolink.h */,
+				23457FE916F3CEC600750F09 /* config.h */,
+				23457FEA16F3CEC600750F09 /* features.h */,
+				23457FEB16F3CEC600750F09 /* forwards.h */,
+				23457FEC16F3CEC600750F09 /* json.h */,
+				23457FED16F3CEC600750F09 /* reader.h */,
+				23457FEE16F3CEC600750F09 /* value.h */,
+				23457FEF16F3CEC600750F09 /* writer.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		23457FF016F3CEC600750F09 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				23457FF116F3CEC600750F09 /* json_batchallocator.h */,
+				23457FF216F3CEC600750F09 /* json_internalarray.inl */,
+				23457FF316F3CEC600750F09 /* json_internalmap.inl */,
+				23457FF416F3CEC600750F09 /* json_reader.cpp */,
+				23457FF516F3CEC600750F09 /* json_tool.h */,
+				23457FF616F3CEC600750F09 /* json_value.cpp */,
+				23457FF716F3CEC600750F09 /* json_valueiterator.inl */,
+				23457FF816F3CEC600750F09 /* json_writer.cpp */,
+				23457FF916F3CEC600750F09 /* sconscript */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		7B07019916DB79CF0002026B = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +145,7 @@
 		7B0701CE16DB83CC0002026B /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				23457FE516F3CEC600750F09 /* json-cpp */,
 				7B0701CF16DB83CC0002026B /* fmod */,
 			);
 			path = lib;
@@ -100,7 +177,7 @@
 		7B0701D816DB83CC0002026B /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				7B0701D916DB83CC0002026B /* libfmodex.dylib */,
+				23457F6B16F3C0B700750F09 /* osx */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -114,7 +191,7 @@
 			buildPhases = (
 				7BD28D4E16DBC4F9000D3542 /* Sources */,
 				7BD28D5016DBC4F9000D3542 /* Frameworks */,
-				7BD28D5216DBC4F9000D3542 /* ShellScript */,
+				7BD28D5216DBC4F9000D3542 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -152,18 +229,19 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7BD28D5216DBC4F9000D3542 /* ShellScript */ = {
+		7BD28D5216DBC4F9000D3542 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp ./lib/fmod/lib/libfmodex.dylib './bin/'\ncp ./lib/fmod/lib/libfmodex.dylib \"$TARGET_BUILD_DIR\"\ncp -f \"$TARGET_BUILD_DIR/$PRODUCT_NAME\" './bin/'";
+			shellScript = "cp ./lib/fmod/lib/osx/libfmodex.dylib './bin/'\ncp ./lib/fmod/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR\"\ncp -f \"$TARGET_BUILD_DIR/$PRODUCT_NAME\" './bin/'";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -174,6 +252,9 @@
 			files = (
 				7BD28D4F16DBC4F9000D3542 /* main.cpp in Sources */,
 				7BD28DE016DEB516000D3542 /* config.cpp in Sources */,
+				23457FFA16F3CEC600750F09 /* json_reader.cpp in Sources */,
+				23457FFB16F3CEC600750F09 /* json_value.cpp in Sources */,
+				23457FFC16F3CEC600750F09 /* json_writer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,13 +322,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/_jake/Workspaces/exp/resound/lib/yaml-cpp/include";
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/lib/json-cpp/include\"";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/portaudio/19.20111121/lib,
-					"\"$(SRCROOT)/../../Desktop/FMOD Programmers API/api/lib\"",
 					"\"$(SRCROOT)/lib\"",
 					"\"$(SRCROOT)/lib/fmod/lib\"",
+					"\"$(SRCROOT)/lib/fmod/lib/osx\"",
+					"\"$(SRCROOT)/lib/json-cpp/lib\"",
 				);
 				PRODUCT_NAME = resound;
 			};
@@ -257,13 +338,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/_jake/Workspaces/exp/resound/lib/yaml-cpp/include";
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/lib/json-cpp/include\"";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/portaudio/19.20111121/lib,
-					"\"$(SRCROOT)/../../Desktop/FMOD Programmers API/api/lib\"",
 					"\"$(SRCROOT)/lib\"",
 					"\"$(SRCROOT)/lib/fmod/lib\"",
+					"\"$(SRCROOT)/lib/fmod/lib/osx\"",
+					"\"$(SRCROOT)/lib/json-cpp/lib\"",
 				);
 				PRODUCT_NAME = resound;
 			};
