@@ -49,13 +49,15 @@ int main(int argc, const char * argv[])
     }
     
     bool cfg_set = false;
-    for (int i = 1; i < argc; i++) {
+    for (int i = 0; i < argc; ++i) {
         if (!cfg_set) {
-            if (!strncmp(argv[i], "--config", 8) || !strncmp(argv[i], "-c", 2)) cfg_set = true;
-            else path_audio.push_back(std::string(argv[i]));
+            if (!strncmp(argv[i], "--config", 8) || !strncmp(argv[i], "-c", 2))
+                cfg_set = true;
+            else
+                path_audio.push_back(std::string(argv[i]));
         }
         else {
-            path_config = argv[i];
+            path_config = std::string(argv[i]);
             cfg_set = false;
         }
     }
@@ -63,7 +65,7 @@ int main(int argc, const char * argv[])
     /*
      * Build the configuration object
      */
-    if (cfg_set) Config::getInstance()->set(path_config);
+    Config::getInstance()->set(path_config);
     
     /*
      * Set up FMOD
