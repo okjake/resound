@@ -40,7 +40,7 @@ void Config::set(std::string fp) {
         config_file.close();
     }
     else {
-        std::cerr << ERR_OP_WRAP_BEGIN << "Could not open " << fp << ERR_OP_WRAP_END << std::endl;
+        std::cerr << ERR_OP_WRAP_BEGIN << "Could not open " << fp << ERR_OP_WRAP_END;
         return;
     }
     
@@ -52,12 +52,13 @@ void Config::set(std::string fp) {
     
     if (!reader.parse(contents, root)) {
         std::cerr << ERR_OP_WRAP_BEGIN << "Error parsing " << fp << std::endl << std::endl;
-        std::cerr << reader.getFormatedErrorMessages() << ERR_OP_WRAP_END << std::endl;
+        std::cerr << reader.getFormatedErrorMessages() << ERR_OP_WRAP_END;
         return;
     }
     
     const Json::Value files = root["files"];
     for ( int i = 0; i < files.size(); ++i ) {
+        // TODO
         std::cout << files[i].asString() << std::endl;
     }
     

@@ -16,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		233D88AB16F5FC8600F4B386 /* oscpkt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oscpkt.h; sourceTree = "<group>"; };
+		233D88AC16F5FCDC00F4B386 /* udp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = udp.h; sourceTree = "<group>"; };
 		23457F6C16F3C0D400750F09 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = osx/libfmodex.dylib; sourceTree = "<group>"; };
 		23457FE816F3CEC600750F09 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
 		23457FE916F3CEC600750F09 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -59,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		233D88AA16F5FC8600F4B386 /* oscpkt */ = {
+			isa = PBXGroup;
+			children = (
+				233D88AB16F5FC8600F4B386 /* oscpkt.h */,
+				233D88AC16F5FCDC00F4B386 /* udp.h */,
+			);
+			path = oscpkt;
+			sourceTree = "<group>";
+		};
 		23457F6B16F3C0B700750F09 /* osx */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +156,7 @@
 		7B0701CE16DB83CC0002026B /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				233D88AA16F5FC8600F4B386 /* oscpkt */,
 				23457FE516F3CEC600750F09 /* json-cpp */,
 				7B0701CF16DB83CC0002026B /* fmod */,
 			);
