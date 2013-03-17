@@ -1,21 +1,22 @@
 ## Super-minimal CLI audio player
 
-It's designed for quite a specific use case (namely installation work), so the focus will be on stability and simplicity rather than features.
-Currently all audio is read into memory, rather than streamed from disk. This is by design but may be revised later.
+[Under development, currently very limited functionality]
 
-Builds on OSX currently. I'll be working on Linux support shortly. Built on FMOD.
+Built with arts installations in mind. The idea is to provide a basic, rock-solid player that can be controlled over OSC.
+All of the configuration and mapping can be stored in one portable JSON document, bundling this with your audio files allows you to recreate your environment easily. 
+Builds on OSX currently. I'll be working on Linux support shortly.
 
 ### Usage
 Pass one or more soundfile paths as command line arguments. They will be played.
-If you need more fine-grained configuration, use a configuration YAML file. There's one in the examples folder.
+If you need more fine-grained configuration, use a configuration JSON file. There's one in the examples folder.
 
 ### Currently working:
-+ Looping a single audio file (by passing the filepath as the first argument)
-+ Play and loop multiple audio files
++ Play and loop one or more audio files
 
 ### What's coming / roadmap:
-+ Passing external config file at runtime
-+ OSC support
+The following should be configurable at runtime:
++ Useful features of the FMOD API
++ OSC mapping
 
 ### Supported audio file formats
 + AIFF
