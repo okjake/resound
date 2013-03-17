@@ -1,7 +1,8 @@
 {
-    "files" : [
-        "one.mp3",
-        "two.wav",
-        "three.aiff"
-        ],     
+  "files" : [
+    "one",
+    "two",
+    "three",
+    "four"
+  ]    
 }

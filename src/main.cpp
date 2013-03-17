@@ -15,6 +15,7 @@
 #include "fmod_errors.h"
 
 #define VERSION 0.01
+
 #define USAGE "Usage: resound audiofile.mp3 audiofile.wav ... --config configfile.yml"
 
 void checkErr(FMOD_RESULT res)
